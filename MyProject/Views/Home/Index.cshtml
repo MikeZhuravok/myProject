@@ -1,0 +1,181 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion is my profession</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Site about last fashion events">
+    <link rel="dress icon" href="~/css/images/icon_dress.ico" />
+    <link href="~/css/EDITstyle.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/js-func.js"></script>
+    <script src="~/Scripts/slider.js"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="shell">
+            <h1 id="logo"></h1>
+            <div id="block">
+                @Html.Partial("_LoginPartial")
+                <div id="navigation">
+                    <ul>
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>
+                            <a href="#">Services</a>
+
+                            <div class="dd-holder">
+                                <div class="dd-t"></div>
+                                <div class="dd">
+                                    <ul>
+                                        <li><a href="#">&#9654; Cloth</a></li>
+                                        <li><a href="#">&#9654; Shops</a></li>
+                                        <li><a href="#">&#9654; Goods</a></li>
+                                        <li><a href="#">&#9654; Food</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dd-b"></div>
+                            </div>
+
+                        </li>
+                        <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- Main -->
+    <div id="main">
+
+        <div id="imgbar">
+            <div class="shell">
+                <div class="imgbar-left">
+                    <h2>Head of the main article</h2>
+                    <p>Main article, or some interesting note</p>
+                    <a href="register.html" class="order-now">Register</a>
+                </div>
+                <div class="imgbar-right">
+                    <div class="slider">
+                        <ul>
+                            <li>
+                                <img src="~/css/images/slider-image.jpg" />
+                            </li>
+                            <li>
+                                <img src="~/css/images/slider-image1-a.jpg" />
+                            </li>
+                            <li>
+                                <img src="~/css/images/slider-image2-a.jpg" />
+                            </li>
+                            <li>
+                                <img src="~/css/images/slider-image3-a.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shell">
+            <div id="sidebar">
+                <div class="text-container">
+                    <!--id="box" -->
+                    <h2><a href="http://stylemeetings.tumblr.com/">The New of the day</a></h2>
+
+                    <p>
+                        Fashion article of the day. France may be the global center of couture, but today Valentino reminded
+                        us that it doesn't have a monopoly on all things haute. The brand, which
+                        usually presents its collections in Paris, has taken its couture show on
+                        the road for the past couple of seasons. In December, they showed the collection
+                        in New York.
+                    </p>
+                </div>
+                <div class="post">
+                    <h2>Latest Fashion Show</h2>
+                    <img src="~/css/images/Post-image1.gif" />
+
+                    <p>
+                        NY Fashion week 2015. France may be the global center of couture, but today Valentino reminded
+                        us that it doesn't have a monopoly on all things haute.
+                    </p>
+                    <a href="http://fashionbombdaily.com/tag/fashion-show/" class="more">&#9654; more</a>
+                </div>
+            </div>
+            <div id="content">
+                <div class="col">
+                    <div class="post">
+                        <h2>What is the most fashionable place?</h2>
+                        <img src="~/css/images/Post-image2.gif" />
+
+                        <p>
+                            The most popular fashion place - article. France may be the global center of couture, but today Valentino reminded
+                            us that it doesn't have a monopoly on all things haute. The brand, which
+                            usually presents its collections in Paris, has taken its couture show on
+                            the road for the past couple of seasons. In December, they showed the collection
+                            in New York.
+                        </p>
+
+                        <div class="cl">&nbsp;</div>
+                        <!-- -->
+                        <a href="http://www.triphobo.com/blog/fashion-cities" class="more">&#9654; more</a>
+                    </div>
+                </div>
+                <div class="col cols-2">
+                    <div class="post">
+                        <h2>Who is the most fashionable?</h2>
+                        <img src="~/css/images/post-image3.gif" class="right"/>
+                        <p>
+                            Article about fashion trends, looks and people. France may be the global center of couture, but today Valentino reminded
+                            us that it doesn't have a monopoly on all things haute. The brand, which
+                            usually presents its collections in Paris, has taken its couture show on
+                            the road for the past couple of seasons.
+                        </p>
+
+                        <div class="cl">&nbsp;</div>
+                        <a href="http://blogandthecity.net/" class="more">&#9654; more</a>
+                    </div>
+                </div>
+                <div class="col cols-2 last">
+                    <div class="post">
+                        <h2>What designers do?</h2>
+
+                        <p>
+                            About fashion designers. France may be the global center of couture, but today Valentino reminded
+                            us that it doesn't have a monopoly on all things haute. The brand, which
+                            usually presents its collections in Paris, has taken its couture show on
+                            the road for the past couple of seasons.
+                        </p>
+                        <a href="#" class="more left">&#9654; more</a>
+                        <img src="~/css/images/post-image4.gif"  class="right"/>
+                        <div class="cl">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cl">&nbsp;</div>
+        </div>
+    </div>
+    <!-- End Main -->
+    <!-- Footer -->
+    <div id="footer">
+        <div class="shell">
+            <p class="left">
+                @Html.ActionLink("Home", "Index", "Home")
+                <span>|</span>
+                @Html.ActionLink("About", "About", "Home")
+                <span>|</span>
+                @Html.ActionLink("Services", "Index", "Services")
+                <span>|</span>
+                @Html.ActionLink("Projects", "Projects", "Home")
+            </p>
+
+            <p class="right">
+                Copyright &copy; Fashion is my profession | Design by Alisa_In_Wonderland
+            </p>
+        </div>
+    </div>
+    <!-- End Footer -->
+</body>
+</html>

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="About page">
+    <link rel="dress icon" href="~/css/images/icon_dress.ico" />
+    <link href="~/css/EDITstyle.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/js-func.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="shell">
+            <h1 id="logo"></h1>
+
+            <div id="block">
+                <a href="signIn.html">Sign In</a> or
+                <a href="register.html">Register</a>
+
+                <div id="navigation">
+                    <ul>
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>
+                            <a href="#">Services</a>
+
+                            <div class="dd-holder">
+                                <div class="dd-t"></div>
+                                <div class="dd">
+                                    <ul>
+                                        <li><a href="#">&#9654; Cloth</a></li>
+                                        <li><a href="#">&#9654; Shops</a></li>
+                                        <li><a href="#">&#9654; Goods</a></li>
+                                        <li><a href="#">&#9654; Food</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dd-b"></div>
+                            </div>
+
+                        </li>
+                        <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="container">
+            <div class="vertical-sidebar">
+                <div id="navigation">
+                    <ul class="vertical-list">
+                        <li>
+                            @Html.ActionLink("Home", "Index", "Home", new { @class = "item" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("About", "About", "Home", new { @class = "item" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Services", "Index", "Services", new { @class = "item" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Projects", "Projects", "Home", new { @class = "item" })
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="footer">
+        <div class="shell">
+            <p class="left">
+                @Html.ActionLink("Home", "Index", "Home")
+                <span>|</span>
+                @Html.ActionLink("About", "About", "Home")
+                <span>|</span>
+                @Html.ActionLink("Services", "Index", "Services")
+                <span>|</span>
+                @Html.ActionLink("Projects", "Projects", "Home")
+            </p>
+
+            <p class="right">
+                Copyright &copy; Fashion is my profession | Design by Alisa_In_Wonderland
+            </p>
+        </div>
+    </div>
+</body>
+</html>
